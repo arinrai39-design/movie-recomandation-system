@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+button {
+    padding: 12px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#recommend-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#recommend-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#clear-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#clear-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+#recommendations {
+    margin-top: 30px;
+}
+
+.movie {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border-left: 5px solid #007bff;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.movie h3 {
+    margin: 0 0 10px;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.movie p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.rating {
+    font-weight: bold;
+    color: #ff9800;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎥 Movie Recommendation System</h1>
+        <p>Select a category and minimum rating to get personalized movie recommendations!</p>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label for="category-select">Category:</label>
+                <select id="category-select">
+                    <option value="">--Select Category--</option>
+                    <option value="Hollywood">Hollywood</option>
+                    <option value="Bollywood">Bollywood</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="rating-select">Minimum Rating:</label>
+                <select id="rating-select">
+                    <option value="0">--Any Rating--</option>
+                    <option value="7">7.0+</option>
+                    <option value="8">8.0+</option>
+                    <option value="9">9.0+</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button id="recommend-btn">Get Recommendations</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+        
+        <div id="recommendations"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
